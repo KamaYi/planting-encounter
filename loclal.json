@@ -1,0 +1,1384 @@
+{
+    "ficus_lyrata": {
+        "common_name": [
+            "琴叶榕",
+            "小提琴叶榕",
+            "提琴叶榕"
+        ],
+        "scientific_name": "琴叶榕 (Ficus lyrata)",
+        "maintenance": {
+            "light": "喜明亮散射光，忌暴晒，光线不足生长缓慢",
+            "watering": "表土干燥后浇透，冬季减少浇水",
+            "temperature": "18-30℃，不耐寒，低于10℃需保护",
+            "humidity": "喜湿润空气，干燥时需喷雾加湿",
+            "soil": "疏松肥沃、排水良好的微酸性土壤",
+            "fertilizing": "生长季每月一次稀薄平衡液肥"
+        },
+        "common_issues": [
+            {
+                "issue": "叶缘焦枯",
+                "cause": "空气过于干燥或施肥过量"
+            },
+            {
+                "issue": "叶片下垂无精神",
+                "cause": "浇水过多烂根或长期缺水"
+            }
+        ]
+    },
+    "spathiphyllum": {
+        "common_name": [
+            "白掌",
+            "和平芋",
+            "白鹤芋",
+            "一帆风顺"
+        ],
+        "scientific_name": "白鹤芋 (Spathiphyllum)",
+        "maintenance": {
+            "light": "明亮散射光或半阴环境，忌强光直射",
+            "watering": "保持盆土微湿，勿积水，喜湿润环境",
+            "temperature": "18-25℃，冬季需10℃以上",
+            "humidity": "高湿度环境更佳，需经常喷雾",
+            "soil": "富含腐殖质、保水且透气的土壤",
+            "fertilizing": "生长季每2-3周一次稀薄液肥"
+        },
+        "common_issues": [
+            {
+                "issue": "叶片发黄",
+                "cause": "光照过强、肥害或浇水不当"
+            },
+            {
+                "issue": "不开花",
+                "cause": "光照不足或氮肥过多"
+            }
+        ]
+    },
+    "dracaena_fragrans": {
+        "common_name": [
+            "幸福树",
+            "香龙血树",
+            "巴西铁树",
+            "玉米植物"
+        ],
+        "scientific_name": "香龙血树 (Dracaena fragrans)",
+        "maintenance": {
+            "light": "喜半阴或明亮散射光，也耐阴",
+            "watering": "盆土半干时浇水，忌积水",
+            "temperature": "18-28℃，冬季需5℃以上",
+            "humidity": "对湿度要求中等，干燥时可喷雾",
+            "soil": "疏松肥沃、排水良好的沙质壤土",
+            "fertilizing": "生长季每月施一次复合肥"
+        },
+        "common_issues": [
+            {
+                "issue": "叶尖干枯",
+                "cause": "空气干燥、盆土过干或肥害"
+            },
+            {
+                "issue": "下部叶片脱落",
+                "cause": "正常老化或环境变化过大"
+            }
+        ]
+    },
+    "zamioculcas_zamiifolia": {
+        "common_name": [
+            "金钱树",
+            "雪铁芋",
+            "泽米叶天南星",
+            "龙凤木"
+        ],
+        "scientific_name": "雪铁芋 (Zamioculcas zamiifolia)",
+        "maintenance": {
+            "light": "耐阴，喜明亮散射光，忌强光暴晒",
+            "watering": "耐旱，盆土干透再浇，宁干勿湿",
+            "temperature": "20-30℃，冬季需8℃以上",
+            "humidity": "对空气湿度要求不严",
+            "soil": "疏松透气、排水良好的沙质土",
+            "fertilizing": "生长季每月施一次稀薄液肥"
+        },
+        "common_issues": [
+            {
+                "issue": "块茎腐烂",
+                "cause": "浇水过多，盆土长期潮湿"
+            },
+            {
+                "issue": "叶片发黄",
+                "cause": "光照过强或根系受损"
+            }
+        ]
+    },
+    "crassula_ovata": {
+        "common_name": [
+            "玉树",
+            "燕子掌",
+            "景天树",
+            "发财树"
+        ],
+        "scientific_name": "燕子掌 (Crassula ovata)",
+        "maintenance": {
+            "light": "喜充足阳光，光照不足易徒长",
+            "watering": "耐旱，干透浇透，冬季严格控水",
+            "temperature": "15-25℃，冬季需5℃以上",
+            "humidity": "喜干燥环境，忌潮湿",
+            "soil": "排水极佳的沙质土或多肉专用土",
+            "fertilizing": "生长季每月施一次稀薄多肉专用肥"
+        },
+        "common_issues": [
+            {
+                "issue": "茎干细弱徒长",
+                "cause": "光照不足或水肥过多"
+            },
+            {
+                "issue": "叶片皱缩掉落",
+                "cause": "长期缺水"
+            }
+        ]
+    },
+    "sansevieria_trifasciata": {
+        "common_name": [
+            "虎皮兰",
+            "虎尾兰",
+            "千岁兰",
+            "岳母舌"
+        ],
+        "scientific_name": "虎尾兰 (Sansevieria trifasciata)",
+        "maintenance": {
+            "light": "喜光也耐阴，光照充足花纹更明显",
+            "watering": "极耐旱，盆土完全干透后再浇",
+            "temperature": "16-30℃，冬季需5℃以上",
+            "humidity": "对湿度适应性强，耐干燥",
+            "soil": "疏松排水良好的沙质土",
+            "fertilizing": "生长季每1-2月施一次稀薄液肥"
+        },
+        "common_issues": [
+            {
+                "issue": "叶基部腐烂",
+                "cause": "浇水过多或低温冻伤"
+            },
+            {
+                "issue": "叶片颜色变淡",
+                "cause": "长期光照不足"
+            }
+        ]
+    },
+    "phalaenopsis": {
+        "common_name": [
+            "蝴蝶兰",
+            "蝶兰",
+            "Phal"
+        ],
+        "scientific_name": "蝴蝶兰属 (Phalaenopsis)",
+        "maintenance": {
+            "light": "喜明亮的散射光，忌阳光直射",
+            "watering": "见干见湿，保持植料微潮，避免积水",
+            "temperature": "18-28℃，花期需温差刺激",
+            "humidity": "喜高湿环境（60-80%），需喷雾加湿",
+            "soil": "水苔、树皮等兰科专用植料",
+            "fertilizing": "生长期薄肥勤施，花期前增施磷钾肥"
+        },
+        "common_issues": [
+            {
+                "issue": "花苞掉落",
+                "cause": "环境突变、温差过大或空气过干"
+            },
+            {
+                "issue": "根系干瘪或腐烂",
+                "cause": "浇水不当（过干或过湿）"
+            }
+        ]
+    },
+    "chlorophytum_comosum_variegatum": {
+        "common_name": [
+            "金边吊兰",
+            "镶边吊兰",
+            "斑叶吊兰"
+        ],
+        "scientific_name": "金边吊兰 (Chlorophytum comosum 'Variegatum')",
+        "maintenance": {
+            "light": "喜明亮散射光，金边品种需光稍多以防褪色",
+            "watering": "喜湿润，表土干即浇水，忌积水",
+            "temperature": "15-25℃，冬季需5℃以上",
+            "humidity": "喜湿润空气，干燥时叶尖易干",
+            "soil": "疏松肥沃、排水良好的沙质壤土",
+            "fertilizing": "生长旺季每2周施一次稀薄液肥"
+        },
+        "common_issues": [
+            {
+                "issue": "金边褪为绿色",
+                "cause": "光照长期不足"
+            },
+            {
+                "issue": "叶片折断",
+                "cause": "空气过干或机械损伤"
+            }
+        ]
+    },
+    "peperomia_obtusifolia": {
+        "common_name": [
+            "豆瓣绿",
+            "圆叶椒草",
+            "钝叶椒草",
+            "西瓜皮椒草"
+        ],
+        "scientific_name": "钝叶椒草 (Peperomia obtusifolia)",
+        "maintenance": {
+            "light": "喜半阴或明亮散射光，忌强光",
+            "watering": "耐旱，盆土干透一半时浇水",
+            "temperature": "18-28℃，冬季需10℃以上",
+            "humidity": "喜中等湿度，可耐受室内干燥",
+            "soil": "疏松透气、排水良好的腐殖土",
+            "fertilizing": "生长季每月施一次稀薄液肥"
+        },
+        "common_issues": [
+            {
+                "issue": "叶片发软下垂",
+                "cause": "缺水或烂根"
+            },
+            {
+                "issue": "茎叶徒长稀疏",
+                "cause": "光照不足"
+            }
+        ]
+    },
+    "asparagus_setaceus": {
+        "common_name": [
+            "文竹",
+            "云片竹",
+            "山草",
+            "羽毛天门冬"
+        ],
+        "scientific_name": "天门冬 (Asparagus setaceus)",
+        "maintenance": {
+            "light": "喜明亮的散射光，忌强光直射",
+            "watering": "保持盆土微湿，勿干透，忌积水",
+            "temperature": "15-25℃，冬季需5℃以上",
+            "humidity": "喜湿润空气，干燥时需喷雾",
+            "soil": "疏松肥沃、排水良好的腐殖土",
+            "fertilizing": "生长季每2-3周施一次稀薄液肥"
+        },
+        "common_issues": [
+            {
+                "issue": "叶片枯黄脱落",
+                "cause": "强光灼伤、空气过干或积水烂根"
+            },
+            {
+                "issue": "新生枝叶细弱发黄",
+                "cause": "长期缺肥"
+            }
+        ]
+    },
+    {
+        "epipremnum_aureum": {
+            "common_name": [
+                "绿萝",
+                "魔鬼藤",
+                "黄金葛",
+                "石柑子"
+            ],
+            "scientific_name": "绿萝 (Epipremnum aureum)",
+            "maintenance": {
+                "light": "明亮散射光为宜，可耐弱光，避免强烈直射",
+                "watering": "见干见湿，保持土壤微湿，忌长期积水",
+                "temperature": "15-30℃，低于 10℃ 易受冻",
+                "humidity": "喜湿润环境，空气干燥时可经常喷雾",
+                "soil": "疏松透气、排水良好的营养土或泥炭土混合土",
+                "fertilizing": "生长季 20-30 天一次稀薄液肥"
+            },
+            "common_issues": [
+                {
+                    "issue": "叶尖发黄干枯",
+                    "cause": "空气过干或长期缺水"
+                },
+                {
+                    "issue": "叶片发黄脱落",
+                    "cause": "浇水过多或根系缺氧烂根"
+                }
+            ]
+        },
+        "scindapsus_aureus": {
+            "common_name": [
+                "黄金葛",
+                "金叶绿萝",
+                "霓虹绿萝"
+            ],
+            "scientific_name": "黄金葛 (Scindapsus aureus)",
+            "maintenance": {
+                "light": "喜明亮散射光，斑叶品种需光稍多以维持色彩",
+                "watering": "见干见湿，保持土壤微湿",
+                "temperature": "18-28℃，冬季需10℃以上",
+                "humidity": "喜湿润，空气干燥时可喷雾",
+                "soil": "疏松肥沃、排水良好的营养土",
+                "fertilizing": "生长季每3-4周施一次稀薄液肥"
+            },
+            "common_issues": [
+                {
+                    "issue": "斑纹变淡或消失",
+                    "cause": "光照长期不足"
+                },
+                {
+                    "issue": "叶片变小、节间变长",
+                    "cause": "缺肥或光照不足"
+                }
+            ]
+        },
+        "nephrolepis_exaltata": {
+            "common_name": [
+                "肾蕨",
+                "波士顿蕨",
+                "排骨蕨",
+                "玉羊齿"
+            ],
+            "scientific_name": "肾蕨 (Nephrolepis exaltata)",
+            "maintenance": {
+                "light": "喜明亮的散射光或半阴环境",
+                "watering": "喜湿润，表土微干即浇水，忌积水",
+                "temperature": "16-25℃，冬季需8℃以上",
+                "humidity": "喜高湿环境（>50%），需经常喷雾",
+                "soil": "富含腐殖质、保水透气的酸性土壤",
+                "fertilizing": "生长季每2周施一次极稀薄的液肥"
+            },
+            "common_issues": [
+                {
+                    "issue": "叶片干枯卷曲",
+                    "cause": "空气过于干燥"
+                },
+                {
+                    "issue": "叶片发黄",
+                    "cause": "光照过强、肥害或浇水不当"
+                }
+            ]
+        },
+        "aloe_vera": {
+            "common_name": [
+                "芦荟",
+                "库拉索芦荟",
+                "油葱",
+                "狼牙掌"
+            ],
+            "scientific_name": "芦荟 (Aloe vera)",
+            "maintenance": {
+                "light": "喜充足光照，也耐半阴，夏季需遮阴",
+                "watering": "极耐旱，干透浇透，宁干勿湿",
+                "temperature": "15-30℃，冬季需5℃以上",
+                "humidity": "喜干燥，忌潮湿闷热",
+                "soil": "排水极佳的沙质土或多肉专用土",
+                "fertilizing": "需肥少，生长季每1-2月施薄肥一次"
+            },
+            "common_issues": [
+                {
+                    "issue": "叶片发红",
+                    "cause": "光照过强或温差刺激"
+                },
+                {
+                    "issue": "叶片发软、基部腐烂",
+                    "cause": "浇水过多"
+                }
+            ]
+        },
+        "pilea_peperomioides": {
+            "common_name": [
+                "镜面草",
+                "金钱草",
+                "硬币草",
+                "一片心"
+            ],
+            "scientific_name": "镜面草 (Pilea peperomioides)",
+            "maintenance": {
+                "light": "喜明亮的散射光，忌强光直射",
+                "watering": "盆土微干时浇水，忌积水",
+                "temperature": "15-25℃，冬季需5℃以上",
+                "humidity": "喜中等湿度，可耐受室内干燥",
+                "soil": "疏松透气、排水良好的腐殖土",
+                "fertilizing": "生长季每月施一次稀薄液肥"
+            },
+            "common_issues": [
+                {
+                    "issue": "叶片发黄掉落",
+                    "cause": "浇水过多烂根"
+                },
+                {
+                    "issue": "茎干歪斜",
+                    "cause": "趋光性，需定期转动花盆"
+                }
+            ]
+        },
+        "hedera_helix": {
+            "common_name": [
+                "常春藤",
+                "洋常春藤",
+                "长春藤",
+                "土鼓藤"
+            ],
+            "scientific_name": "洋常春藤 (Hedera helix)",
+            "maintenance": {
+                "light": "喜明亮散射光，花叶品种需光稍多",
+                "watering": "喜湿润，表土干即浇水，勿积水",
+                "temperature": "15-22℃，夏季需凉爽通风",
+                "humidity": "喜湿润空气，干燥时需喷雾",
+                "soil": "疏松肥沃、排水良好的腐殖土",
+                "fertilizing": "生长季每2周施一次稀薄液肥"
+            },
+            "common_issues": [
+                {
+                    "issue": "叶色暗淡、生长停滞",
+                    "cause": "温度过高（夏季休眠）"
+                },
+                {
+                    "issue": "红蜘蛛侵扰",
+                    "cause": "空气干燥、不通风"
+                }
+            ]
+        },
+        "tradescantia": {
+            "common_name": [
+                "吊竹梅",
+                "紫竹梅",
+                "紫锦草",
+                "水竹草"
+            ],
+            "scientific_name": "吊竹梅属 (Tradescantia)",
+            "maintenance": {
+                "light": "喜充足光照，光照越足色彩越艳，也能耐半阴",
+                "watering": "喜湿润，表土干即浇水，稍耐旱",
+                "temperature": "18-25℃，冬季需5℃以上",
+                "humidity": "对湿度要求不严",
+                "soil": "普通营养土即可，要求不严",
+                "fertilizing": "生长季每2-3周施一次稀薄液肥"
+            },
+            "common_issues": [
+                {
+                    "issue": "节间过长、叶片稀疏",
+                    "cause": "光照不足导致徒长"
+                },
+                {
+                    "issue": "叶色变绿",
+                    "cause": "长期光照不足"
+                }
+            ]
+        },
+        "calathea": {
+            "common_name": [
+                "青苹果竹芋",
+                "圆叶竹芋",
+                "孔雀竹芋",
+                "肖竹芋"
+            ],
+            "scientific_name": "肖竹芋属 (Calathea)",
+            "maintenance": {
+                "light": "喜明亮的散射光，忌强光直射",
+                "watering": "保持土壤微湿，勿干透，用软水浇灌更佳",
+                "temperature": "18-25℃，怕冷，冬季需15℃以上",
+                "humidity": "喜高湿环境（>60%），必须经常喷雾",
+                "soil": "疏松肥沃、排水良好的微酸性腐殖土",
+                "fertilizing": "生长季每2周施一次极稀薄的液肥"
+            },
+            "common_issues": [
+                {
+                    "issue": "叶缘焦枯卷曲",
+                    "cause": "空气湿度过低或水质过硬"
+                },
+                {
+                    "issue": "叶片夜间不竖立",
+                    "cause": "环境不适（过干、过冷或过暗）"
+                }
+            ]
+        },
+        "epipremnum_aureum_marble": {
+            "common_name": [
+                "花叶绿萝",
+                "雪花葛",
+                "大理石皇后",
+                "白金葛"
+            ],
+            "scientific_name": "绿萝属 (Epipremnum aureum 'Marble Queen')",
+            "maintenance": {
+                "light": "喜明亮散射光，花叶品种需光较多以维持斑纹",
+                "watering": "见干见湿，避免积水",
+                "temperature": "18-28℃，冬季需10℃以上",
+                "humidity": "喜湿润，空气干燥时可喷雾",
+                "soil": "疏松肥沃、排水良好的营养土",
+                "fertilizing": "生长季每月施一次稀薄液肥"
+            },
+            "common_issues": [
+                {
+                    "issue": "白色斑纹变少变绿",
+                    "cause": "光照不足"
+                },
+                {
+                    "issue": "生长缓慢",
+                    "cause": "温度过低或盆土板结"
+                }
+            ]
+        },
+        "ficus_pumila": {
+            "common_name": [
+                "薜荔",
+                "小爱心榕",
+                "爬藤榕",
+                "木莲"
+            ],
+            "scientific_name": "薜荔 (Ficus pumila)",
+            "maintenance": {
+                "light": "喜半阴或明亮散射光，忌强光暴晒",
+                "watering": "喜湿润，表土干即浇水，勿积水",
+                "temperature": "18-28℃，冬季需5℃以上",
+                "humidity": "喜湿润空气，生长季需较高湿度",
+                "soil": "疏松肥沃、排水良好的土壤",
+                "fertilizing": "生长季每月施1-2次稀薄液肥"
+            },
+            "common_issues": [
+                {
+                    "issue": "叶片变小、生长变慢",
+                    "cause": "长期缺肥或光照不足"
+                },
+                {
+                    "issue": "气根减少",
+                    "cause": "空气湿度过低"
+                }
+            ]
+        },
+        "philodendron": {
+            "common_name": [
+                "春羽",
+                "羽裂蔓绿绒",
+                "仙羽芋",
+                "小天使"
+            ],
+            "scientific_name": "喜林芋属 (Philodendron)",
+            "maintenance": {
+                "light": "喜明亮的散射光，耐半阴",
+                "watering": "喜湿润，表土微干即浇水，忌积水",
+                "temperature": "18-28℃，冬季需10℃以上",
+                "humidity": "喜湿润空气，经常喷雾有利生长",
+                "soil": "疏松肥沃、排水良好的腐殖土",
+                "fertilizing": "生长季每月施一次稀薄液肥"
+            },
+            "common_issues": [
+                {
+                    "issue": "叶色暗淡无光",
+                    "cause": "长期缺乏光照或肥料"
+                },
+                {
+                    "issue": "新叶畸形或变小",
+                    "cause": "根系生长受限或养分不足"
+                }
+            ]
+        },
+        "aspidistra_elatior": {
+            "common_name": [
+                "一叶兰",
+                "蜘蛛抱蛋",
+                "箬叶",
+                "九龙盘"
+            ],
+            "scientific_name": "一叶兰 (Aspidistra elatior)",
+            "maintenance": {
+                "light": "极耐阴，可置于室内阴暗角落",
+                "watering": "耐旱，干透浇透，忌盆土长期潮湿",
+                "temperature": "10-25℃，适应性强，可耐0℃低温",
+                "humidity": "对空气湿度要求极低，耐干燥",
+                "soil": "对土壤要求不严，普通园土即可",
+                "fertilizing": "需肥少，生长季每1-2月施薄肥一次"
+            },
+            "common_issues": [
+                {
+                    "issue": "叶片出现灼伤斑点",
+                    "cause": "突然暴露在强光下"
+                },
+                {
+                    "issue": "叶片边缘发黄",
+                    "cause": "长期过干或肥害"
+                }
+            ]
+        },
+        "schefflera_actinophylla": {
+            "common_name": [
+                "鹅掌柴",
+                "鸭脚木",
+                "八方来财",
+                "手树"
+            ],
+            "scientific_name": "鹅掌柴 (Schefflera actinophylla)",
+            "maintenance": {
+                "light": "喜明亮散射光，也耐半阴",
+                "watering": "喜湿润，表土干即浇，冬季控水",
+                "temperature": "16-27℃，冬季需5℃以上",
+                "humidity": "喜湿润空气，可经常喷雾",
+                "soil": "疏松肥沃、排水良好的微酸性土壤",
+                "fertilizing": "生长季每2-4周施一次稀薄液肥"
+            },
+            "common_issues": [
+                {
+                    "issue": "叶片大量脱落",
+                    "cause": "浇水过多烂根或温度骤变"
+                },
+                {
+                    "issue": "叶尖干枯",
+                    "cause": "空气过于干燥"
+                }
+            ]
+        },
+        "dracaena_sanderiana": {
+            "common_name": [
+                "富贵竹",
+                "万年竹",
+                "开运竹",
+                "竹蕉"
+            ],
+            "scientific_name": "富贵竹 (Dracaena sanderiana)",
+            "maintenance": {
+                "light": "喜明亮散射光，忌强光，水培耐阴性强",
+                "watering": "水培保持水质清洁，生根前常换水",
+                "temperature": "18-28℃，冬季需10℃以上",
+                "humidity": "喜湿润环境",
+                "soil": "水培或疏松肥沃的沙质土",
+                "fertilizing": "水培每月加几滴营养液，土培生长季每月施肥"
+            },
+            "common_issues": [
+                {
+                    "issue": "水培水质发臭、根系腐烂",
+                    "cause": "长期未换水"
+                },
+                {
+                    "issue": "叶片发黄",
+                    "cause": "光照过强、缺铁或施肥过多"
+                }
+            ]
+        },
+        "syngonium_podophyllum": {
+            "common_name": [
+                "合果芋",
+                "箭叶芋",
+                "白蝴蝶",
+                "紫梗芋"
+            ],
+            "scientific_name": "合果芋 (Syngonium podophyllum)",
+            "maintenance": {
+                "light": "喜明亮散射光，耐半阴，忌强光",
+                "watering": "喜湿润，表土干即浇，忌积水",
+                "temperature": "18-28℃，冬季需10℃以上",
+                "humidity": "喜高湿，需经常喷雾",
+                "soil": "疏松肥沃、排水良好的腐殖土",
+                "fertilizing": "生长季每2-3周施一次稀薄液肥"
+            },
+            "common_issues": [
+                {
+                    "issue": "叶片颜色变淡、斑纹消失",
+                    "cause": "光照不足"
+                },
+                {
+                    "issue": "叶片焦边",
+                    "cause": "空气湿度过低或肥害"
+                }
+            ]
+        },
+        "ceropegia_woodii": {
+            "common_name": [
+                "爱之蔓",
+                "心蔓",
+                "吊金钱",
+                "一串心"
+            ],
+            "scientific_name": "爱之蔓 (Ceropegia woodii)",
+            "maintenance": {
+                "light": "喜明亮散射光，忌暴晒，光线不足叶片间距拉大",
+                "watering": "耐旱，干透浇透，夏季休眠期控水",
+                "temperature": "15-25℃，冬季需10℃以上",
+                "humidity": "喜干燥，忌潮湿",
+                "soil": "排水极佳的多肉专用土或颗粒土",
+                "fertilizing": "生长季每月施一次极稀薄的多肉专用肥"
+            },
+            "common_issues": [
+                {
+                    "issue": "块茎腐烂",
+                    "cause": "浇水过多，尤其夏季休眠期"
+                },
+                {
+                    "issue": "叶片变薄变软",
+                    "cause": "长期缺水"
+                }
+            ]
+        },
+        "chamaedorea_elegans": {
+            "common_name": [
+                "袖珍椰子",
+                "矮生椰子",
+                "客厅棕榈",
+                "幸福棕"
+            ],
+            "scientific_name": "袖珍椰子 (Chamaedorea elegans)",
+            "maintenance": {
+                "light": "喜半阴，忌强光直射，极耐阴",
+                "watering": "喜湿润，表土干即浇，忌积水",
+                "temperature": "18-24℃，冬季需10℃以上",
+                "humidity": "喜高湿，必须经常喷雾",
+                "soil": "疏松肥沃、排水良好的腐殖土",
+                "fertilizing": "生长季每月施一次稀薄液肥"
+            },
+            "common_issues": [
+                {
+                    "issue": "叶尖枯黄",
+                    "cause": "空气过于干燥"
+                },
+                {
+                    "issue": "叶片出现褐色斑点",
+                    "cause": "浇水过多或水温过低"
+                }
+            ]
+        },
+        "fittonia_albivenis": {
+            "common_name": [
+                "网纹草",
+                "费通草",
+                "红叶网纹草",
+                "白网纹草"
+            ],
+            "scientific_name": "网纹草 (Fittonia albivenis)",
+            "maintenance": {
+                "light": "喜明亮的散射光，忌强光",
+                "watering": "喜湿润，表土微干即浇，勿干透",
+                "temperature": "18-25℃，冬季需15℃以上",
+                "humidity": "必须高湿环境（>60%），建议闷养或加湿",
+                "soil": "疏松透气、保水性好的泥炭土",
+                "fertilizing": "生长季每2周施一次极稀薄的液肥"
+            },
+            "common_issues": [
+                {
+                    "issue": "整体萎蔫",
+                    "cause": "缺水（可浸盆急救）"
+                },
+                {
+                    "issue": "茎叶腐烂",
+                    "cause": "浇水过多、通风不良"
+                }
+            ]
+        },
+        "nolina_recurvata": {
+            "common_name": [
+                "酒瓶兰",
+                "象腿树"
+            ],
+            "scientific_name": "酒瓶兰 (Nolina recurvata)",
+            "maintenance": {
+                "light": "喜充足阳光，也耐半阴",
+                "watering": "极耐旱，干透浇透，冬季严格控水",
+                "temperature": "16-30℃，冬季需5℃以上",
+                "humidity": "耐干燥",
+                "soil": "排水极佳的沙质土",
+                "fertilizing": "生长季每1-2月施一次稀薄液肥"
+            },
+            "common_issues": [
+                {
+                    "issue": "茎基部变软",
+                    "cause": "浇水过多烂根"
+                },
+                {
+                    "issue": "叶尖干枯",
+                    "cause": "空气过干或偶尔缺水"
+                }
+            ]
+        },
+        "dracaena_marginata": {
+            "common_name": [
+                "龙血树",
+                "千年木",
+                "红边竹蕉",
+                "马尾铁"
+            ],
+            "scientific_name": "缘叶龙血树 (Dracaena marginata)",
+            "maintenance": {
+                "light": "喜明亮光，耐半阴，光照足色彩艳",
+                "watering": "耐旱，盆土干透一半再浇，忌积水",
+                "temperature": "18-28℃，冬季需10℃以上",
+                "humidity": "对湿度要求中等",
+                "soil": "疏松肥沃、排水良好的沙质壤土",
+                "fertilizing": "生长季每月施一次稀薄液肥"
+            },
+            "common_issues": [
+                {
+                    "issue": "叶尖干枯",
+                    "cause": "空气干燥、盆土过干或氟化物敏感（可用雨水浇灌）"
+                },
+                {
+                    "issue": "下部老叶脱落",
+                    "cause": "正常新陈代谢"
+                }
+            ]
+        },
+        "fatsia_japonica": {
+            "common_name": [
+                "八角金盘",
+                "八金盘",
+                "手树"
+            ],
+            "scientific_name": "八角金盘 (Fatsia japonica)",
+            "maintenance": {
+                "light": "喜半阴或明亮散射光，忌强光暴晒",
+                "watering": "喜湿润，表土干即浇，勿积水",
+                "temperature": "10-25℃，耐寒，可耐0℃低温",
+                "humidity": "喜湿润空气，可喷雾",
+                "soil": "疏松肥沃、排水良好的土壤",
+                "fertilizing": "生长季每月施一次复合肥"
+            },
+            "common_issues": [
+                {
+                    "issue": "叶片焦边、发黄",
+                    "cause": "光照过强或空气过干"
+                },
+                {
+                    "issue": "叶片下垂",
+                    "cause": "缺水"
+                }
+            ]
+        },
+        "cordyline_fruticosa": {
+            "common_name": [
+                "五彩千年木",
+                "三色缘龙血树",
+                "彩纹竹蕉"
+            ],
+            "scientific_name": "朱蕉 (Cordyline fruticosa)",
+            "maintenance": {
+                "light": "喜明亮光，光照越足色彩越鲜艳",
+                "watering": "喜湿润，表土干即浇，冬季控水",
+                "temperature": "20-28℃，冬季需10℃以上",
+                "humidity": "喜湿润空气，需经常喷雾",
+                "soil": "疏松肥沃、排水良好的酸性腐殖土",
+                "fertilizing": "生长季每2周施一次稀薄液肥"
+            },
+            "common_issues": [
+                {
+                    "issue": "叶色褪绿、斑纹消失",
+                    "cause": "光照长期不足"
+                },
+                {
+                    "issue": "叶尖干枯",
+                    "cause": "空气湿度过低"
+                }
+            ]
+        },
+        "aralia_elegantissima": {
+            "common_name": [
+                "孔雀木",
+                "手树",
+                "假楤木"
+            ],
+            "scientific_name": "秀丽假楤木 (Aralia elegantissima)",
+            "maintenance": {
+                "light": "喜明亮散射光，忌强光直射",
+                "watering": "喜湿润，表土微干即浇，忌积水",
+                "temperature": "18-25℃，冬季需15℃以上",
+                "humidity": "喜高湿，必须经常喷雾",
+                "soil": "疏松肥沃、排水良好的腐殖土",
+                "fertilizing": "生长季每2周施一次稀薄液肥"
+            },
+            "common_issues": [
+                {
+                    "issue": "叶片脱落",
+                    "cause": "温度过低、浇水不当或通风不良"
+                },
+                {
+                    "issue": "叶片萎蔫",
+                    "cause": "空气湿度过低"
+                }
+            ]
+        },
+        "adiantum_capillus-veneris": {
+            "common_name": [
+                "铁线蕨",
+                "少女的发丝",
+                "铁线草"
+            ],
+            "scientific_name": "铁线蕨 (Adiantum capillus-veneris)",
+            "maintenance": {
+                "light": "喜明亮的散射光或半阴环境",
+                "watering": "喜湿润，忌干旱，表土微干即浇",
+                "temperature": "15-25℃，冬季需10℃以上",
+                "humidity": "必须高湿环境（>50%），需经常喷雾",
+                "soil": "富含腐殖质、保水透气的钙质土或腐叶土",
+                "fertilizing": "生长季每2周施一次极稀薄的液肥"
+            },
+            "common_issues": [
+                {
+                    "issue": "叶片干枯卷曲",
+                    "cause": "空气过于干燥"
+                },
+                {
+                    "issue": "整体萎蔫",
+                    "cause": "缺水或积水烂根"
+                }
+            ]
+        },
+        "asplenium_nidus": {
+            "common_name": [
+                "鸟巢蕨",
+                "巢蕨",
+                "山苏花",
+                "王冠蕨"
+            ],
+            "scientific_name": "鸟巢蕨 (Asplenium nidus)",
+            "maintenance": {
+                "light": "喜半阴或明亮的散射光，忌强光",
+                "watering": "喜湿润，表土干即浇，叶杯可存少量水",
+                "temperature": "16-28℃，冬季需10℃以上",
+                "humidity": "喜高湿环境，需经常喷雾",
+                "soil": "疏松透气、排水良好的腐殖土或蕨类专用土",
+                "fertilizing": "生长季每月施一次稀薄液肥"
+            },
+            "common_issues": [
+                {
+                    "issue": "叶缘焦枯",
+                    "cause": "空气湿度过低或强光灼伤"
+                },
+                {
+                    "issue": "叶片基部腐烂",
+                    "cause": "浇水过多，叶心长期积水"
+                }
+            ]
+        },
+        "hydrocotyle_vulgaris": {
+            "common_name": [
+                "铜钱草",
+                "南美天胡荽",
+                "香菇草"
+            ],
+            "scientific_name": "铜钱草 (Hydrocotyle vulgaris)",
+            "maintenance": {
+                "light": "喜全日照至半阴，光照不足易徒长",
+                "watering": "喜大水，可半土半水或水培养护，忌干旱",
+                "temperature": "10-25℃，冬季需5℃以上",
+                "humidity": "喜湿润",
+                "soil": "园土或无土栽培，水培需定期加营养液",
+                "fertilizing": "生长季每2周施一次稀薄液肥"
+            },
+            "common_issues": [
+                {
+                    "issue": "茎秆细长倒伏",
+                    "cause": "光照严重不足导致徒长"
+                },
+                {
+                    "issue": "叶片发黄",
+                    "cause": "缺肥或水质不佳"
+                }
+            ]
+        },
+        "tillandsia": {
+            "common_name": [
+                "空气凤梨",
+                "铁兰花",
+                "空气草"
+            ],
+            "scientific_name": "空气凤梨属 (Tillandsia)",
+            "maintenance": {
+                "light": "喜明亮的散射光或柔和直射光",
+                "watering": "通过喷雾或浸泡方式给水，每周2-3次，干透再湿",
+                "temperature": "15-30℃，冬季需5℃以上",
+                "humidity": "需要良好的通风和一定的空气湿度",
+                "soil": "无需土壤，附着在木头、石头等物体上",
+                "fertilizing": "生长季每月将专用肥稀释后喷施一次"
+            },
+            "common_issues": [
+                {
+                    "issue": "心部腐烂",
+                    "cause": "给水后未及时晾干，通风太差"
+                },
+                {
+                    "issue": "叶片干枯卷曲",
+                    "cause": "长期缺水或空气过于干燥"
+                }
+            ]
+        },
+        "schlumbergera": {
+            "common_name": [
+                "蟹爪兰",
+                "圣诞仙人掌",
+                "蟹爪莲",
+                "锦上添花"
+            ],
+            "scientific_name": "蟹爪兰 (Schlumbergera)",
+            "maintenance": {
+                "light": "喜明亮的散射光，忌强光暴晒",
+                "watering": "盆土表面干后浇透，花期保持湿润，花后控水",
+                "temperature": "15-25℃，花期需凉爽温度（10-15℃）以促花",
+                "humidity": "喜湿润空气，可经常喷雾",
+                "soil": "疏松透气、排水良好的腐殖土（如兰花土）",
+                "fertilizing": "生长期每半月施一次稀薄液肥，花期前增施磷钾肥"
+            },
+            "common_issues": [
+                {
+                    "issue": "花苞掉落",
+                    "cause": "浇水不均、温度突变或移动花盆"
+                },
+                {
+                    "issue": "茎节变红、发软",
+                    "cause": "光照过强或浇水过多"
+                }
+            ]
+        },
+        "cyclamen_persicum": {
+            "common_name": [
+                "仙客来",
+                "兔子花",
+                "萝卜海棠",
+                "一品冠"
+            ],
+            "scientific_name": "仙客来 (Cyclamen persicum)",
+            "maintenance": {
+                "light": "喜明亮的散射光，忌强光直射",
+                "watering": "采用浸盆法补水，避免水浇在球茎和叶心上",
+                "temperature": "10-20℃，喜凉爽，怕高温",
+                "humidity": "喜湿润空气，但叶面怕水",
+                "soil": "疏松肥沃、排水良好的腐殖土",
+                "fertilizing": "花期每2周施一次稀薄磷钾肥"
+            },
+            "common_issues": [
+                {
+                    "issue": "叶片和花梗软腐",
+                    "cause": "浇水方法不当，球茎腐烂"
+                },
+                {
+                    "issue": "花期短、消苞",
+                    "cause": "温度过高（>20℃）"
+                }
+            ]
+        },
+        "saintpaulia": {
+            "common_name": [
+                "非洲堇",
+                "非洲紫罗兰",
+                "圣保罗花"
+            ],
+            "scientific_name": "非洲堇属 (Saintpaulia)",
+            "maintenance": {
+                "light": "喜明亮的散射光，人工光照也能长得很好",
+                "watering": "采用浸盆法，保持盆土微湿，勿浇到叶片上",
+                "temperature": "18-24℃，冬季需15℃以上",
+                "humidity": "喜湿润空气，但叶片怕水，勿喷雾",
+                "soil": "疏松透气、排水良好的专用腐殖土",
+                "fertilizing": "生长季每周施一次极稀薄的专用液肥"
+            },
+            "common_issues": [
+                {
+                    "issue": "叶片出现水渍斑痕、腐烂",
+                    "cause": "叶面沾水或浇水水温过低"
+                },
+                {
+                    "issue": "只长叶不开花",
+                    "cause": "光照不足或氮肥过多"
+                }
+            ]
+        },
+        "sinningia_speciosa": {
+            "common_name": [
+                "大岩桐",
+                "落雪泥",
+                "六雪尼"
+            ],
+            "scientific_name": "大岩桐 (Sinningia speciosa)",
+            "maintenance": {
+                "light": "喜明亮的散射光，忌强光直射",
+                "watering": "采用浸盆法，保持土壤微湿，勿浇到叶片和球茎上",
+                "temperature": "18-25℃，冬季休眠期需10℃以上",
+                "humidity": "喜湿润空气，但叶片怕水",
+                "soil": "疏松肥沃、排水良好的腐殖土",
+                "fertilizing": "生长期每10天施一次稀薄液肥"
+            },
+            "common_issues": [
+                {
+                    "issue": "叶片和花蕾腐烂",
+                    "cause": "叶面沾水或盆土过湿"
+                },
+                {
+                    "issue": "球茎腐烂",
+                    "cause": "休眠期浇水过多"
+                }
+            ]
+        },
+        "clivia_miniata": {
+            "common_name": [
+                "君子兰",
+                "剑叶石蒜",
+                "大花君子兰"
+            ],
+            "scientific_name": "君子兰 (Clivia miniata)",
+            "maintenance": {
+                "light": "喜明亮的散射光，忌强光暴晒",
+                "watering": "盆土干透一半再浇，宁干勿湿，忌积水",
+                "temperature": "15-25℃，花期需凉爽温差以促花",
+                "humidity": "对空气湿度要求不严",
+                "soil": "疏松肥沃、排水良好的腐殖土（如橡树叶土）",
+                "fertilizing": "生长季和花期前每月施一次稀薄液肥"
+            },
+            "common_issues": [
+                {
+                    "issue": "夹箭（花葶抽不出）",
+                    "cause": "温度过高、温差不足或养分不够"
+                },
+                {
+                    "issue": "叶片长短不齐、歪斜",
+                    "cause": "光照方向单一，需定期转盆"
+                }
+            ]
+        },
+        "jasminum_sambac": {
+            "common_name": [
+                "茉莉花",
+                "茉莉",
+                "香魂"
+            ],
+            "scientific_name": "茉莉 (Jasminum sambac)",
+            "maintenance": {
+                "light": "喜全日照，光照越足开花越香",
+                "watering": "喜湿润，表土干即浇，忌积水",
+                "temperature": "22-35℃，冬季需5℃以上入室保护",
+                "humidity": "喜湿润空气，可喷雾",
+                "soil": "疏松肥沃、微酸性的沙质壤土",
+                "fertilizing": "生长期每周施一次稀薄矾肥水，促花时增施磷钾肥"
+            },
+            "common_issues": [
+                {
+                    "issue": "枝叶徒长不开花",
+                    "cause": "光照不足或氮肥过多"
+                },
+                {
+                    "issue": "叶片黄化",
+                    "cause": "土壤偏碱、缺铁或浇水过多"
+                }
+            ]
+        },
+        "gardenia_jasminoides": {
+            "common_name": [
+                "栀子花",
+                "黄栀子",
+                "山栀花",
+                "水横枝"
+            ],
+            "scientific_name": "栀子 (Gardenia jasminoides)",
+            "maintenance": {
+                "light": "喜充足光照，夏季需适当遮阴",
+                "watering": "喜湿润，表土干即浇，忌积水，喜微酸性水",
+                "temperature": "16-28℃，冬季需5℃以上",
+                "humidity": "喜高湿空气，需经常喷雾",
+                "soil": "疏松肥沃、强酸性的腐殖土（pH4.5-6.5）",
+                "fertilizing": "生长期每半月施一次矾肥水或酸性营养液"
+            },
+            "common_issues": [
+                {
+                    "issue": "叶片黄化（叶脉绿）",
+                    "cause": "土壤碱化、缺铁"
+                },
+                {
+                    "issue": "花苞掉落",
+                    "cause": "空气过干、积水或环境突变"
+                }
+            ]
+        },
+        "rhododendron_simsii": {
+            "common_name": [
+                "杜鹃花",
+                "映山红",
+                "山石榴"
+            ],
+            "scientific_name": "杜鹃 (Rhododendron simsii)",
+            "maintenance": {
+                "light": "喜明亮的散射光，忌强光暴晒",
+                "watering": "喜湿润，忌干旱和积水，用软水浇灌",
+                "temperature": "12-25℃，喜凉爽，怕酷热",
+                "humidity": "喜高湿空气，需经常喷雾",
+                "soil": "必须使用疏松透气、强酸性的腐殖土（pH4.5-5.5）",
+                "fertilizing": "生长期每半月施一次稀薄矾肥水"
+            },
+            "common_issues": [
+                {
+                    "issue": "大量黄叶、落叶",
+                    "cause": "盆土碱化、积水烂根或空气过干"
+                },
+                {
+                    "issue": "花后死亡",
+                    "cause": "室内通风差、闷热"
+                }
+            ]
+        },
+        "rosa_chinensis": {
+            "common_name": [
+                "月季",
+                "微型月季",
+                "玫瑰",
+                "月月红"
+            ],
+            "scientific_name": "月季 (Rosa chinensis)",
+            "maintenance": {
+                "light": "必须全日照，光照不足绝不开花",
+                "watering": "表土干即浇透，忌积水",
+                "temperature": "15-26℃，大部分品种耐寒，夏季需通风",
+                "humidity": "对空气湿度要求不严",
+                "soil": "疏松肥沃、排水良好的微酸性至中性土壤",
+                "fertilizing": "生长期每周施一次稀薄液肥，花期增施磷钾肥"
+            },
+            "common_issues": [
+                {
+                    "issue": "白粉病/黑斑病",
+                    "cause": "通风不良、湿度过高"
+                },
+                {
+                    "issue": "只长叶不开花",
+                    "cause": "光照严重不足或氮肥过多"
+                }
+            ]
+        },
+        "camellia_japonica": {
+            "common_name": [
+                "茶花",
+                "山茶花",
+                "曼陀罗树"
+            ],
+            "scientific_name": "山茶 (Camellia japonica)",
+            "maintenance": {
+                "light": "喜明亮的散射光，夏季需遮阴，忌强光",
+                "watering": "喜湿润，表土干即浇，忌积水，喜微酸性水",
+                "temperature": "10-25℃，耐寒，怕高温",
+                "humidity": "喜湿润空气，需经常喷雾",
+                "soil": "疏松肥沃、排水良好的强酸性腐殖土（pH5.0-6.5）",
+                "fertilizing": "生长期每月施一次稀薄矾肥水，花期前增施磷钾肥"
+            },
+            "common_issues": [
+                {
+                    "issue": "花苞枯萎脱落",
+                    "cause": "空气过干、盆土过湿或干湿不均"
+                },
+                {
+                    "issue": "叶片失绿有黄斑",
+                    "cause": "土壤碱化、缺素或红蜘蛛危害"
+                }
+            ]
+        },
+        "osmanthus_fragrans": {
+            "common_name": [
+                "桂花",
+                "木犀",
+                "九里香",
+                "岩桂"
+            ],
+            "scientific_name": "桂花 (Osmanthus fragrans)",
+            "maintenance": {
+                "light": "喜全日照，亦耐半阴",
+                "watering": "喜湿润，表土干即浇，忌积水",
+                "temperature": "15-28℃，耐寒，可耐-10℃低温",
+                "humidity": "对空气湿度要求不严",
+                "soil": "疏松肥沃、排水良好的微酸性沙质壤土",
+                "fertilizing": "早春和花前各施一次有机肥或复合肥"
+            },
+            "common_issues": [
+                {
+                    "issue": "不开花或花少",
+                    "cause": "光照不足、氮肥过多或冬季未经历低温春化"
+                },
+                {
+                    "issue": "叶片枯尖",
+                    "cause": "盆土过碱或长期室内通风差"
+                }
+            ]
+        },
+        "citrus_limon": {
+            "common_name": [
+                "柠檬树",
+                "香橼",
+                "洋柠檬"
+            ],
+            "scientific_name": "柠檬 (Citrus limon)",
+            "maintenance": {
+                "light": "必须全日照，光照越足果实越甜",
+                "watering": "喜湿润，表土干即浇，忌积水",
+                "temperature": "15-30℃，冬季需5℃以上",
+                "humidity": "喜湿润空气，可喷雾",
+                "soil": "疏松肥沃、排水良好的微酸性至中性土壤",
+                "fertilizing": "生长季每半月施一次以磷钾为主的稀薄液肥"
+            },
+            "common_issues": [
+                {
+                    "issue": "落花落果",
+                    "cause": "授粉不良、养分不足或浇水不当"
+                },
+                {
+                    "issue": "叶片黄化",
+                    "cause": "缺铁（可补硫酸亚铁）或根系问题"
+                }
+            ]
+        },
+        "rosmarinus_officinalis": {
+            "common_name": [
+                "迷迭香"
+            ],
+            "scientific_name": "迷迭香 (Rosmarinus officinalis)",
+            "maintenance": {
+                "light": "喜全日照，光照不足生长细弱",
+                "watering": "耐旱，盆土干透再浇，宁干勿湿",
+                "temperature": "10-28℃，耐热，不耐严寒，冬季需0℃以上",
+                "humidity": "喜干燥，忌潮湿",
+                "soil": "排水极佳的沙质土或颗粒土",
+                "fertilizing": "需肥少，生长季每月施一次极稀薄液肥"
+            },
+            "common_issues": [
+                {
+                    "issue": "根部腐烂、枝叶发黑",
+                    "cause": "浇水过多，盆土不透气"
+                },
+                {
+                    "issue": "枝叶枯瘦",
+                    "cause": "长期缺光"
+                }
+            ]
+        },
+        "mentha": {
+            "common_name": [
+                "薄荷",
+                "野薄荷",
+                "鱼香草"
+            ],
+            "scientific_name": "薄荷属 (Mentha)",
+            "maintenance": {
+                "light": "喜全日照至半阴，光照足香味浓",
+                "watering": "喜湿润，表土干即浇，忌干旱",
+                "temperature": "20-30℃，耐热，耐寒（地上部分枯萎，根茎越冬）",
+                "humidity": "喜湿润",
+                "soil": "对土壤要求不严，以肥沃疏松的壤土为佳",
+                "fertilizing": "生长旺季每半月施一次稀薄液肥，以氮肥为主"
+            },
+            "common_issues": [
+                {
+                    "issue": "徒长、香味淡",
+                    "cause": "光照不足"
+                },
+                {
+                    "issue": "红蜘蛛侵害",
+                    "cause": "空气干燥、不通风"
+                }
+            ]
+        },
+        "plectranthus_hadienisis": {
+            "common_name": [
+                "碰碰香",
+                "绒毛香茶菜",
+                "一抹香"
+            ],
+            "scientific_name": "碰碰香 (Plectranthus hadienisis)",
+            "maintenance": {
+                "light": "喜充足光照，夏季需适当遮阴",
+                "watering": "耐旱，盆土干透再浇，宁干勿湿",
+                "temperature": "15-28℃，冬季需5℃以上",
+                "humidity": "喜干燥，忌潮湿",
+                "soil": "排水良好的沙质土或多肉专用土",
+                "fertilizing": "生长季每月施一次稀薄液肥"
+            },
+            "common_issues": [
+                {
+                    "issue": "茎节细长、叶片稀疏",
+                    "cause": "光照不足导致徒长"
+                },
+                {
+                    "issue": "叶片发黄、掉落",
+                    "cause": "浇水过多"
+                }
+            ]
+        }
+    }
+}
