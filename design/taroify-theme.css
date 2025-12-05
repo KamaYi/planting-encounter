@@ -1,0 +1,202 @@
+/**
+ * Taroify 主题配置 - 植遇应用
+ * 基于设计规范和 Taroify 组件库样式变量
+ */
+
+:root {
+  /* 主色调 - 绿色系 */
+  --taroify-primary-color: #4CAF50;
+  --taroify-success-color: #4CAF50;
+  --taroify-warning-color: #FFB74D;
+  --taroify-danger-color: #E57373;
+  --taroify-info-color: #64B5F6;
+
+  /* 中性色 */
+  --taroify-text-color: #212121;
+  --taroify-text-color-2: #616161;
+  --taroify-text-color-3: #9E9E9E;
+  --taroify-border-color: #E0E0E0;
+  --taroify-background-color: #F5F5F5;
+  --taroify-background-color-light: #FFFFFF;
+
+  /* Image 组件样式变量 */
+  --image-placeholder-color: var(--taroify-text-color-3);
+  --image-placeholder-font-size: 14px;
+  --image-placeholder-icon-size: 32px;
+  --image-placeholder-icon-color: var(--taroify-text-color-3);
+  --image-placeholder-background-color: var(--taroify-background-color);
+
+  /* 圆角 */
+  --taroify-border-radius-sm: 4px;
+  --taroify-border-radius-md: 8px;
+  --taroify-border-radius-lg: 12px;
+  --taroify-border-radius-xl: 16px;
+  --taroify-border-radius-max: 999px;
+
+  /* 间距 */
+  --taroify-padding-xs: 4px;
+  --taroify-padding-sm: 8px;
+  --taroify-padding-md: 12px;
+  --taroify-padding-lg: 16px;
+  --taroify-padding-xl: 20px;
+
+  /* 字体大小 */
+  --taroify-font-size-xs: 10px;
+  --taroify-font-size-sm: 12px;
+  --taroify-font-size-md: 14px;
+  --taroify-font-size-lg: 16px;
+  --taroify-font-size-xl: 18px;
+  --taroify-font-size-xxl: 20px;
+
+  /* 阴影 */
+  --taroify-shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --taroify-shadow-md: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --taroify-shadow-lg: 0 4px 12px rgba(0, 0, 0, 0.15);
+  --taroify-shadow-xl: 0 8px 24px rgba(0, 0, 0, 0.2);
+
+  /* 过渡动画 */
+  --taroify-animation-duration-base: 0.3s;
+  --taroify-animation-timing-function-enter: ease-out;
+  --taroify-animation-timing-function-leave: ease-in;
+}
+
+/* Taroify Image 组件样式 */
+.taroify-image {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  background-color: var(--image-placeholder-background-color);
+}
+
+.taroify-image__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.taroify-image--round {
+  border-radius: var(--taroify-border-radius-max);
+  overflow: hidden;
+}
+
+.taroify-image--square {
+  border-radius: var(--taroify-border-radius-md);
+}
+
+.taroify-image--rounded {
+  border-radius: var(--taroify-border-radius-lg);
+}
+
+/* Image Placeholder 加载中状态 */
+.taroify-image__placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--image-placeholder-color);
+  font-size: var(--image-placeholder-font-size);
+  background-color: var(--image-placeholder-background-color);
+}
+
+.taroify-image__placeholder-icon {
+  width: var(--image-placeholder-icon-size);
+  height: var(--image-placeholder-icon-size);
+  color: var(--image-placeholder-icon-color);
+  margin-bottom: var(--taroify-padding-sm);
+}
+
+.taroify-image__placeholder-text {
+  color: var(--image-placeholder-color);
+  font-size: var(--image-placeholder-font-size);
+}
+
+/* Image Fallback 加载失败状态 */
+.taroify-image__fallback {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--image-placeholder-color);
+  font-size: var(--image-placeholder-font-size);
+  background-color: var(--image-placeholder-background-color);
+}
+
+.taroify-image__fallback-icon {
+  width: var(--image-placeholder-icon-size);
+  height: var(--image-placeholder-icon-size);
+  color: var(--image-placeholder-icon-color);
+  margin-bottom: var(--taroify-padding-sm);
+}
+
+.taroify-image__fallback-text {
+  color: var(--image-placeholder-color);
+  font-size: var(--image-placeholder-font-size);
+}
+
+/* Image 填充模式 */
+.taroify-image--scaleToFill {
+  object-fit: fill;
+}
+
+.taroify-image--aspectFit {
+  object-fit: contain;
+}
+
+.taroify-image--aspectFill {
+  object-fit: cover;
+}
+
+.taroify-image--widthFix {
+  width: 100%;
+  height: auto;
+}
+
+.taroify-image--heightFix {
+  height: 100%;
+  width: auto;
+}
+
+/* 懒加载动画 */
+.taroify-image--lazy {
+  opacity: 0;
+  transition: opacity var(--taroify-animation-duration-base);
+}
+
+.taroify-image--lazy-loaded {
+  opacity: 1;
+}
+
+/* 加载动画 */
+@keyframes taroify-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.taroify-image__loading {
+  animation: taroify-loading 1s linear infinite;
+}
+
+/* 响应式图片 */
+@media (max-width: 375px) {
+  :root {
+    --image-placeholder-icon-size: 28px;
+    --image-placeholder-font-size: 12px;
+  }
+}
+
+

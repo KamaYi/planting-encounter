@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>植遇 - 高保真原型预览</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .preview-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+            background: #f5f5f5;
+        }
+        .preview-item {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .preview-header {
+            background: linear-gradient(135deg, #4CAF50 0%, #66BB6A 100%);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+            font-weight: 600;
+        }
+        .preview-iframe {
+            width: 100%;
+            height: 800px;
+            border: none;
+            display: block;
+        }
+        @media (max-width: 768px) {
+            .preview-container {
+                grid-template-columns: 1fr;
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <div class="bg-gradient-to-r from-green-500 to-green-600 text-white py-6 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4">
+            <h1 class="text-3xl font-bold mb-2 flex items-center gap-3">
+                <i class="fas fa-leaf"></i>
+                植遇 - 高保真原型预览
+            </h1>
+            <p class="text-green-100">所有核心界面的完整展示 | 移动端小程序风格</p>
+        </div>
+    </div>
+
+    <!-- 功能模块导航 -->
+    <div class="bg-white border-b border-gray-200 sticky top-0 z-40 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 py-3">
+            <div class="flex justify-center gap-2 flex-wrap">
+                <button onclick="showModule('all')" class="module-btn active px-4 py-2 rounded-full text-sm font-medium bg-green-500 text-white">
+                    <i class="fas fa-th mr-1"></i>全部
+                </button>
+                <button onclick="showModule('identify')" class="module-btn px-4 py-2 rounded-full text-sm font-medium bg-gray-100 text-gray-700 hover:bg-gray-200">
+                    <i class="fas fa-camera mr-1"></i>识别模块
+                </button>
+                <button onclick="showModule('garden')" class="module-btn px-4 py-2 rounded-full text-sm font-medium bg-gray-100 text-gray-700 hover:bg-gray-200">
+                    <i class="fas fa-seedling mr-1"></i>我的花园
+                </button>
+                <button onclick="showModule('search')" class="module-btn px-4 py-2 rounded-full text-sm font-medium bg-gray-100 text-gray-700 hover:bg-gray-200">
+                    <i class="fas fa-search mr-1"></i>植物百科
+                </button>
+                <button onclick="showModule('user')" class="module-btn px-4 py-2 rounded-full text-sm font-medium bg-gray-100 text-gray-700 hover:bg-gray-200">
+                    <i class="fas fa-user mr-1"></i>个人中心
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="preview-container" id="preview-container">
+        <!-- 未登录/欢迎页 -->
+        <div class="preview-item" data-module="user">
+            <div class="preview-header bg-gradient-to-r from-green-600 to-green-700">
+                <i class="fas fa-door-open mr-2"></i>
+                未登录/欢迎页
+            </div>
+            <iframe src="welcome.html" class="preview-iframe"></iframe>
+        </div>
+
+        <!-- 首页 - 植物识别（核心功能） -->
+        <div class="preview-item" data-module="identify">
+            <div class="preview-header bg-gradient-to-r from-green-500 to-green-600">
+                <i class="fas fa-camera mr-2"></i>
+                首页 - 植物识别（核心功能）
+            </div>
+            <iframe src="home.html" class="preview-iframe"></iframe>
+        </div>
+
+        <!-- 识别结果页 -->
+        <div class="preview-item" data-module="identify">
+            <div class="preview-header">
+                <i class="fas fa-search mr-2"></i>
+                识别结果页
+            </div>
+            <iframe src="result.html" class="preview-iframe"></iframe>
+        </div>
+
+        <!-- 纠正识别结果 -->
+        <div class="preview-item" data-module="identify">
+            <div class="preview-header">
+                <i class="fas fa-edit mr-2"></i>
+                纠正识别结果
+            </div>
+            <iframe src="correct.html" class="preview-iframe"></iframe>
+        </div>
+
+        <!-- 植物详情页 -->
+        <div class="preview-item" data-module="all">
+            <div class="preview-header">
+                <i class="fas fa-info-circle mr-2"></i>
+                植物详情页
+            </div>
+            <iframe src="detail.html" class="preview-iframe"></iframe>
+        </div>
+
+        <!-- 我的花园（智能养护提醒） -->
+        <div class="preview-item" data-module="garden">
+            <div class="preview-header bg-gradient-to-r from-green-600 to-green-700">
+                <i class="fas fa-seedling mr-2"></i>
+                我的花园 - 智能养护提醒
+            </div>
+            <iframe src="garden.html" class="preview-iframe"></iframe>
+        </div>
+
+        <!-- 植物百科搜索 -->
+        <div class="preview-item" data-module="search">
+            <div class="preview-header">
+                <i class="fas fa-book mr-2"></i>
+                植物百科搜索
+            </div>
+            <iframe src="search.html" class="preview-iframe"></iframe>
+        </div>
+
+        <!-- 个人中心 -->
+        <div class="preview-item" data-module="user">
+            <div class="preview-header">
+                <i class="fas fa-user-circle mr-2"></i>
+                个人中心
+            </div>
+            <iframe src="profile.html" class="preview-iframe"></iframe>
+        </div>
+    </div>
+
+    <footer class="bg-gray-800 text-gray-300 py-6 mt-8">
+        <div class="max-w-7xl mx-auto px-4 text-center text-sm">
+            <p>植遇 - 植物识别与智能养护助手 | 高保真 HTML 原型</p>
+            <p class="mt-2">使用 Tailwind CSS + FontAwesome 构建</p>
+        </div>
+    </footer>
+
+    <script>
+        function showModule(module) {
+            const items = document.querySelectorAll('.preview-item');
+            const buttons = document.querySelectorAll('.module-btn');
+            
+            // 更新按钮状态
+            buttons.forEach(btn => {
+                btn.classList.remove('active', 'bg-green-500', 'text-white');
+                btn.classList.add('bg-gray-100', 'text-gray-700');
+            });
+            event.target.classList.add('active', 'bg-green-500', 'text-white');
+            event.target.classList.remove('bg-gray-100', 'text-gray-700');
+            
+            // 显示/隐藏对应模块
+            items.forEach(item => {
+                if (module === 'all') {
+                    item.style.display = 'block';
+                } else {
+                    const itemModule = item.getAttribute('data-module');
+                    if (itemModule === module || itemModule === 'all') {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>
+

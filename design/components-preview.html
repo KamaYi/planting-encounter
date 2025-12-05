@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>植遇 - 组件预览</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#4CAF50',
+                            light: '#66BB6A',
+                            dark: '#388E3C',
+                        },
+                    },
+                    fontFamily: {
+                        sans: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        'card': '12px',
+                    },
+                    boxShadow: {
+                        'card': '0 2px 8px rgba(0, 0, 0, 0.1)',
+                        'primary': '0 2px 8px rgba(76, 175, 80, 0.3)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .btn-primary:active {
+            transform: scale(0.95);
+        }
+        .card:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="max-w-4xl mx-auto p-6">
+        <h1 class="text-3xl font-bold text-gray-900 mb-8">植遇 - 组件库预览</h1>
+
+        <!-- 按钮组件 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-6">按钮组件</h2>
+            <div class="bg-white rounded-card p-6 shadow-card space-y-4">
+                <div>
+                    <p class="text-sm text-gray-600 mb-3">主要按钮</p>
+                    <button class="bg-primary text-white px-6 py-3 rounded-lg font-medium shadow-primary hover:bg-primary-dark transition-all btn-primary">
+                        识别植物
+                    </button>
+                </div>
+                <div>
+                    <p class="text-sm text-gray-600 mb-3">次要按钮</p>
+                    <button class="bg-white text-primary border border-primary px-6 py-3 rounded-lg font-medium hover:bg-primary hover:text-white transition">
+                        重新选择
+                    </button>
+                </div>
+                <div>
+                    <p class="text-sm text-gray-600 mb-3">文字按钮</p>
+                    <button class="text-primary text-sm underline">结果不准？</button>
+                </div>
+                <div>
+                    <p class="text-sm text-gray-600 mb-3">禁用状态</p>
+                    <button class="bg-gray-300 text-gray-500 px-6 py-3 rounded-lg font-medium cursor-not-allowed" disabled>
+                        已添加
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 卡片组件 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-6">卡片组件</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-white rounded-card p-5 shadow-card card">
+                    <div class="bg-green-100 rounded-lg h-32 flex items-center justify-center mb-4">
+                        <span class="text-4xl">🌿</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">绿萝</h3>
+                    <p class="text-sm text-gray-600 mb-3">绿萝 (Epipremnum)</p>
+                    <p class="text-sm text-primary">下次浇水：3天后</p>
+                </div>
+                <div class="bg-white rounded-card p-5 shadow-card card">
+                    <div class="bg-green-100 rounded-lg h-32 flex items-center justify-center mb-4">
+                        <span class="text-4xl">🌱</span>
+                    </div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-2">黑金刚</h3>
+                    <p class="text-sm text-gray-600 mb-3">印度榕</p>
+                    <p class="text-sm text-primary">下次施肥：7天后</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 输入框组件 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-6">输入框组件</h2>
+            <div class="bg-white rounded-card p-6 shadow-card space-y-4">
+                <div>
+                    <p class="text-sm text-gray-600 mb-3">标准输入框</p>
+                    <input type="text" placeholder="输入植物名称..." class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-primary transition">
+                </div>
+                <div>
+                    <p class="text-sm text-gray-600 mb-3">搜索框</p>
+                    <div class="flex items-center bg-white border border-gray-300 rounded-lg px-4 focus-within:border-primary transition">
+                        <span class="text-xl mr-2">🔍</span>
+                        <input type="text" placeholder="输入植物名称搜索..." class="flex-1 py-3 outline-none">
+                    </div>
+                </div>
+                <div>
+                    <p class="text-sm text-gray-600 mb-3">错误状态</p>
+                    <input type="text" value="错误输入" class="w-full px-4 py-3 border border-red-500 rounded-lg focus:outline-none focus:border-red-500 transition">
+                    <p class="text-sm text-red-500 mt-1">请输入正确的植物名称</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 标签组件 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-6">标签组件</h2>
+            <div class="bg-white rounded-card p-6 shadow-card">
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <span class="bg-green-50 text-primary px-3 py-1 rounded text-sm font-medium">新手友好</span>
+                    <span class="bg-green-50 text-primary px-3 py-1 rounded text-sm font-medium">耐阴</span>
+                    <span class="bg-green-50 text-primary px-3 py-1 rounded text-sm font-medium">净化空气</span>
+                </div>
+                <div class="flex flex-wrap gap-4">
+                    <div class="flex items-center gap-2">
+                        <span class="text-lg">☀️</span>
+                        <span class="text-sm font-medium">光照</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-lg">💧</span>
+                        <span class="text-sm font-medium">浇水</span>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-lg">🌡️</span>
+                        <span class="text-sm font-medium">温度</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 进度条组件 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-6">进度条组件</h2>
+            <div class="bg-white rounded-card p-6 shadow-card space-y-4">
+                <div>
+                    <p class="text-sm text-gray-600 mb-2">识别准确度: 80%</p>
+                    <div class="w-full bg-gray-200 rounded-full h-2">
+                        <div class="bg-primary h-2 rounded-full" style="width: 80%"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 列表组件 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-6">列表组件</h2>
+            <div class="bg-white rounded-card p-6 shadow-card">
+                <div class="space-y-4">
+                    <div>
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-xl">☀️</span>
+                            <span class="font-medium text-gray-900">光照</span>
+                        </div>
+                        <p class="text-sm text-gray-600 pl-7">喜明亮散射光，忌暴晒，耐半阴</p>
+                    </div>
+                    <div class="border-t border-gray-200 pt-4">
+                        <div class="flex items-center gap-2 mb-2">
+                            <span class="text-xl">💧</span>
+                            <span class="font-medium text-gray-900">浇水</span>
+                        </div>
+                        <p class="text-sm text-gray-600 pl-7">见干见湿，冬季控水</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 空状态组件 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-6">空状态组件</h2>
+            <div class="bg-white rounded-card p-12 shadow-card text-center">
+                <div class="text-8xl mb-5">🌱</div>
+                <p class="text-lg font-medium text-gray-900 mb-2">还没有添加植物</p>
+                <p class="text-sm text-gray-500">在识别页面添加植物到我的花园</p>
+            </div>
+        </section>
+
+        <!-- 加载状态组件 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-6">加载状态组件</h2>
+            <div class="bg-white rounded-card p-6 shadow-card text-center">
+                <div class="inline-block animate-spin text-4xl text-primary mb-3">🌿</div>
+                <p class="text-gray-600">识别中...</p>
+            </div>
+        </section>
+
+        <!-- 提示组件 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-6">提示组件</h2>
+            <div class="space-y-4">
+                <div class="bg-black bg-opacity-80 text-white px-5 py-3 rounded-lg inline-block">
+                    ✓ 已添加到我的花园
+                </div>
+                <div class="bg-red-100 text-red-700 px-5 py-3 rounded-lg inline-block">
+                    ✕ 识别失败，请重试
+                </div>
+                <div class="bg-blue-100 text-blue-700 px-5 py-3 rounded-lg inline-block">
+                    ℹ️ 请确保图片清晰
+                </div>
+            </div>
+        </section>
+
+        <!-- 对话框组件 -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-6">对话框组件</h2>
+            <div class="bg-white rounded-card p-6 shadow-card-lg max-w-sm mx-auto">
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">确认删除？</h3>
+                <p class="text-sm text-gray-600 mb-6">删除后无法恢复</p>
+                <div class="flex gap-3">
+                    <button class="flex-1 bg-gray-100 text-gray-700 py-3 rounded-lg font-medium hover:bg-gray-200 transition">取消</button>
+                    <button class="flex-1 bg-red-500 text-white py-3 rounded-lg font-medium hover:bg-red-600 transition">确认删除</button>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
+
+
+
+

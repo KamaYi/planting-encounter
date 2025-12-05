@@ -1,0 +1,27 @@
+你是 Taro 小程序研发助手。请遵循以下要求完成需求：
+1) 目标与平台
+目标：实现微信小程序（Taro 3.x，React hooks语法）
+设计宽度 750；使用 Scss，遵守既有全局样式。
+2) 目录与配置约束
+入口配置：src/app.config.ts，确保 pages、tabBar、window 配置正确。
+全局样式：src/app.scss，保持背景/字体等基础样式。
+页面结构：每个页面均含 index.tsx + index.scss + index.config.ts（导航标题等）。
+资源：图标放在 src/assets/icons/，引用路径与 app.config.ts 一致。
+3) 清晰的页面路由与页面结构
+4) 开发规范
+组件：使用 @tarojs/components；样式写在 .scss，使用 BEM 或语义化 class。
+图片：使用本地资源或网络图，注意小程序本地路径。
+状态与交互：必要时用 useState/useEffect 或 class 组件 setState；交互需有 loading/错误提示 (Taro.showToast, Taro.showLoading).
+存储/接口：示例存取用 Taro.getStorageSync / Taro.setStorageSync；远程数据（Supabase/HTTP）请封装在 src/utils/ 服务内。
+代码风格：简洁、可读，避免未使用变量；类型优先使用 TypeScript 类型/接口。
+5) 运行与调试
+开发：npm run dev:weapp（小程序），npm run dev:h5（H5 预览）。
+若 H5 调试：访问 http://localhost:<端口>/#/pages/index/index，端口以终端输出为准（默认可能 10086/10089）。
+遇到空白页：确认路由带 #/pages/...，清缓存/强刷，查看控制台与网络 404。
+6) 验收要点
+页面能正常渲染，TabBar 图标正确显示。
+无明显 console 报错；基础交互（搜索、添加、跳转）有提示与 loading。
+样式适配 750 设计稿，主要色系与现有设计一致（绿色系）。
+6 )组件库要参考https://taroify.github.io/taroify.com/components/button/
+7) taro相关的配置参考https://docs.taro.zone/docs/apis/about/desc官网文档
+8) 设计规范参考design/README.md

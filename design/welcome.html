@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>欢迎使用 - 植遇</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#E8F5E9',
+                            100: '#C8E6C9',
+                            500: '#4CAF50',
+                            600: '#43A047',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+        }
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 0.6s ease-out;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-b from-green-500 via-green-400 to-white min-h-screen">
+    <div class="min-h-screen flex flex-col items-center justify-center px-5 pb-20">
+        <!-- Logo 和标题 -->
+        <div class="text-center mb-12 fade-in">
+            <div class="inline-block mb-6 float-animation">
+                <div class="w-32 h-32 rounded-full bg-white bg-opacity-20 backdrop-blur-sm flex items-center justify-center shadow-2xl border-4 border-white border-opacity-30">
+                    <i class="fas fa-leaf text-6xl text-white"></i>
+                </div>
+            </div>
+            <h1 class="text-4xl font-bold text-white mb-3">植遇</h1>
+            <p class="text-white text-opacity-90 text-lg">植物识别与智能养护助手</p>
+        </div>
+
+        <!-- 功能介绍卡片 -->
+        <div class="w-full max-w-sm space-y-4 mb-8 fade-in" style="animation-delay: 0.2s">
+            <div class="bg-white bg-opacity-95 backdrop-blur-sm rounded-2xl p-5 shadow-xl border border-white border-opacity-50">
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-camera text-green-600 text-xl"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="font-semibold text-gray-900 mb-1">智能识别</h3>
+                        <p class="text-sm text-gray-600">拍照识别植物，获取专业养护指南</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white bg-opacity-95 backdrop-blur-sm rounded-2xl p-5 shadow-xl border border-white border-opacity-50">
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-seedling text-blue-600 text-xl"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="font-semibold text-gray-900 mb-1">我的花园</h3>
+                        <p class="text-sm text-gray-600">管理您的植物，智能提醒浇水施肥</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white bg-opacity-95 backdrop-blur-sm rounded-2xl p-5 shadow-xl border border-white border-opacity-50">
+                <div class="flex items-start gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-purple-100 flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-book text-purple-600 text-xl"></i>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="font-semibold text-gray-900 mb-1">植物百科</h3>
+                        <p class="text-sm text-gray-600">搜索植物信息，学习养护知识</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 登录按钮 -->
+        <div class="w-full max-w-sm space-y-3 fade-in" style="animation-delay: 0.4s">
+            <button class="w-full bg-white text-green-600 py-4 rounded-2xl font-semibold text-base shadow-xl hover:shadow-2xl transition-all border-2 border-white">
+                <i class="fab fa-weixin mr-2 text-xl"></i>
+                微信快速登录
+            </button>
+            <button class="w-full bg-white bg-opacity-20 backdrop-blur-sm text-white py-4 rounded-2xl font-medium text-base border-2 border-white border-opacity-50 hover:bg-opacity-30 transition-all">
+                <i class="fas fa-user-circle mr-2"></i>
+                游客模式体验
+            </button>
+        </div>
+
+        <!-- 协议说明 -->
+        <div class="mt-8 text-center fade-in" style="animation-delay: 0.6s">
+            <p class="text-white text-opacity-70 text-xs">
+                登录即表示同意
+                <span class="underline">《用户协议》</span>
+                和
+                <span class="underline">《隐私政策》</span>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
+
+

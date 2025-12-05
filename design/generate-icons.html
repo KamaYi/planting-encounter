@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图标生成工具 - 植遇</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #4CAF50;
+            margin-bottom: 20px;
+        }
+        .icon-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .icon-item {
+            text-align: center;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 8px;
+            border: 2px solid #e0e0e0;
+        }
+        .icon-preview {
+            width: 81px;
+            height: 81px;
+            margin: 0 auto 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            border-radius: 8px;
+            border: 1px solid #e0e0e0;
+        }
+        .icon-preview.active {
+            background: linear-gradient(135deg, #4CAF50 0%, #66BB6A 100%);
+        }
+        .icon-preview i {
+            font-size: 40px;
+            color: #7A7E83;
+        }
+        .icon-preview.active i {
+            color: white;
+        }
+        canvas {
+            display: none;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            margin: 5px;
+        }
+        button:hover {
+            background: #43A047;
+        }
+        .download-all {
+            background: #66BB6A;
+            padding: 12px 24px;
+            font-size: 16px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📱 底部导航栏图标生成工具</h1>
+        <p>根据设计稿生成所需的 PNG 图标文件（81x81px，小程序标准尺寸）</p>
+        
+        <div class="icon-grid">
+            <!-- 识别图标 -->
+            <div class="icon-item">
+                <h3>识别 (scan)</h3>
+                <div class="icon-preview" id="scan-preview">
+                    <i class="fas fa-camera"></i>
+                </div>
+                <div class="icon-preview active" id="scan-active-preview">
+                    <i class="fas fa-camera"></i>
+                </div>
+                <button onclick="generateIcon('scan', false)">生成 scan.png</button>
+                <button onclick="generateIcon('scan', true)">生成 scan-active.png</button>
+            </div>
+
+            <!-- 我的花园图标 -->
+            <div class="icon-item">
+                <h3>我的花园 (garden)</h3>
+                <div class="icon-preview" id="garden-preview">
+                    <i class="fas fa-seedling"></i>
+                </div>
+                <div class="icon-preview active" id="garden-active-preview">
+                    <i class="fas fa-seedling"></i>
+                </div>
+                <button onclick="generateIcon('garden', false)">生成 garden.png</button>
+                <button onclick="generateIcon('garden', true)">生成 garden-active.png</button>
+            </div>
+
+            <!-- 搜索图标 -->
+            <div class="icon-item">
+                <h3>百科搜索 (search)</h3>
+                <div class="icon-preview" id="search-preview">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="icon-preview active" id="search-active-preview">
+                    <i class="fas fa-search"></i>
+                </div>
+                <button onclick="generateIcon('search', false)">生成 search.png</button>
+                <button onclick="generateIcon('search', true)">生成 search-active.png</button>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 30px;">
+            <button class="download-all" onclick="generateAllIcons()">一键生成所有图标</button>
+        </div>
+    </div>
+
+    <canvas id="iconCanvas" width="81" height="81"></canvas>
+
+    <script>
+        const iconConfig = {
+            scan: { icon: 'fa-camera', color: '#7A7E83', activeColor: '#FFFFFF' },
+            garden: { icon: 'fa-seedling', color: '#7A7E83', activeColor: '#FFFFFF' },
+            search: { icon: 'fa-search', color: '#7A7E83', activeColor: '#FFFFFF' }
+        };
+
+        function generateIcon(name, isActive) {
+            const canvas = document.getElementById('iconCanvas');
+            const ctx = canvas.getContext('2d');
+            const config = iconConfig[name];
+            
+            // 清空画布
+            ctx.clearRect(0, 0, 81, 81);
+            
+            if (isActive) {
+                // 绘制渐变背景
+                const gradient = ctx.createLinearGradient(0, 0, 81, 81);
+                gradient.addColorStop(0, '#4CAF50');
+                gradient.addColorStop(1, '#66BB6A');
+                ctx.fillStyle = gradient;
+                ctx.fillRect(0, 0, 81, 81);
+            } else {
+                // 白色背景
+                ctx.fillStyle = '#FFFFFF';
+                ctx.fillRect(0, 0, 81, 81);
+            }
+            
+            // 绘制图标（使用 SVG 路径）
+            ctx.fillStyle = isActive ? config.activeColor : config.color;
+            ctx.font = '40px FontAwesome';
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            
+            // FontAwesome 图标 Unicode
+            const iconMap = {
+                'fa-camera': '\uf030',
+                'fa-seedling': '\uf4d8',
+                'fa-search': '\uf002'
+            };
+            
+            ctx.fillText(iconMap[config.icon], 40.5, 40.5);
+            
+            // 下载图片
+            canvas.toBlob(function(blob) {
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `${name}${isActive ? '-active' : ''}.png`;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+            });
+        }
+
+        function generateAllIcons() {
+            const icons = ['scan', 'garden', 'search'];
+            icons.forEach((name, index) => {
+                setTimeout(() => {
+                    generateIcon(name, false);
+                    setTimeout(() => {
+                        generateIcon(name, true);
+                    }, 500);
+                }, index * 1000);
+            });
+        }
+
+        // 加载 FontAwesome 字体用于 Canvas
+        document.fonts.ready.then(() => {
+            console.log('字体加载完成');
+        });
+    </script>
+</body>
+</html>
+
+

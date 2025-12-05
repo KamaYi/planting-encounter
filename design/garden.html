@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的花园 - 植遇</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="taroify-theme.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#E8F5E9',
+                            100: '#C8E6C9',
+                            500: '#4CAF50',
+                            600: '#43A047',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- 导航栏 -->
+    <div class="bg-green-500 text-white px-4 py-3 shadow-md">
+        <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <i class="fas fa-leaf text-xl"></i>
+                <span class="font-semibold text-lg">我的花园</span>
+            </div>
+            <i class="fas fa-plus-circle text-xl"></i>
+        </div>
+    </div>
+
+    <div class="px-5 py-6 pb-20">
+        <!-- 统计信息 -->
+        <div class="mb-6">
+            <h2 class="text-2xl font-bold text-gray-900 mb-1">我的花园</h2>
+            <p class="text-sm text-gray-500">已添加 <span class="font-semibold text-green-600">2</span> 种植物</p>
+        </div>
+
+        <!-- 植物列表 -->
+        <div class="space-y-4">
+            <!-- 植物卡片 1 - 绿萝 -->
+            <div class="bg-white rounded-3xl p-5 shadow-lg border border-green-100">
+                <div class="flex gap-4">
+                    <!-- 植物图片 - 使用 Taroify Image 组件 -->
+                    <div class="relative">
+                        <div class="w-24 h-24 rounded-2xl shadow-md overflow-hidden">
+                            <!-- Taroify Image：圆形图片，懒加载 -->
+                            <div data-taroify-image 
+                                 data-src="https://images.unsplash.com/photo-1519336056116-9e35e1b3e5a8?w=200&h=200&fit=crop"
+                                 data-mode="aspectFill"
+                                 data-shape="rounded"
+                                 data-lazy-load="true"
+                                 data-placeholder="加载中..."
+                                 data-fallback="加载失败"
+                                 style="width: 100%; height: 100%;">
+                            </div>
+                        </div>
+                        <!-- 状态指示器 -->
+                        <div class="absolute -top-1 -right-1 w-7 h-7 bg-green-500 rounded-full border-3 border-white shadow-md flex items-center justify-center">
+                            <i class="fas fa-check text-white text-xs"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- 植物信息 -->
+                    <div class="flex-1 min-w-0">
+                        <h3 class="text-lg font-bold text-gray-900 mb-1">绿萝</h3>
+                        <p class="text-xs text-gray-500 mb-3 italic">Epipremnum aureum</p>
+                        
+                        <!-- 智能提醒 -->
+                        <div class="space-y-2 mb-3">
+                            <!-- 浇水提醒 -->
+                            <div class="bg-blue-50 rounded-xl p-2.5 border border-blue-100">
+                                <div class="flex items-center justify-between mb-1">
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-tint text-blue-600 text-sm"></i>
+                                        <span class="text-xs font-semibold text-gray-700">下次浇水</span>
+                                    </div>
+                                    <span class="text-xs font-bold text-blue-600">3天后</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <div class="flex-1 bg-blue-100 rounded-full h-1.5 overflow-hidden">
+                                        <div class="bg-gradient-to-r from-blue-400 to-blue-600 h-full rounded-full" style="width: 60%"></div>
+                                    </div>
+                                    <span class="text-xs text-gray-500">周期: 7天</span>
+                                </div>
+                            </div>
+                            
+                            <!-- 施肥提醒 -->
+                            <div class="bg-orange-50 rounded-xl p-2.5 border border-orange-100">
+                                <div class="flex items-center justify-between mb-1">
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-seedling text-orange-600 text-sm"></i>
+                                        <span class="text-xs font-semibold text-gray-700">下次施肥</span>
+                                    </div>
+                                    <span class="text-xs font-bold text-orange-600">15天后</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <div class="flex-1 bg-orange-100 rounded-full h-1.5 overflow-hidden">
+                                        <div class="bg-gradient-to-r from-orange-400 to-orange-600 h-full rounded-full" style="width: 85%"></div>
+                                    </div>
+                                    <span class="text-xs text-gray-500">周期: 30天</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 操作按钮 -->
+                        <div class="flex gap-2">
+                            <button class="flex-1 bg-green-50 text-green-600 py-2 rounded-xl text-sm font-medium hover:bg-green-100 transition">
+                                <i class="fas fa-eye mr-1"></i>查看
+                            </button>
+                            <button class="px-4 bg-red-50 text-red-600 py-2 rounded-xl text-sm font-medium hover:bg-red-100 transition">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 植物卡片 2 - 黑金刚 -->
+            <div class="bg-white rounded-3xl p-5 shadow-lg border border-green-100">
+                <div class="flex gap-4">
+                    <!-- 植物图片 - 使用 Taroify Image 组件 -->
+                    <div class="relative">
+                        <div class="w-24 h-24 rounded-2xl shadow-md overflow-hidden">
+                            <!-- Taroify Image：圆形图片，懒加载 -->
+                            <div data-taroify-image 
+                                 data-src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735?w=200&h=200&fit=crop"
+                                 data-mode="aspectFill"
+                                 data-shape="rounded"
+                                 data-lazy-load="true"
+                                 data-placeholder="加载中..."
+                                 data-fallback="加载失败"
+                                 style="width: 100%; height: 100%;">
+                            </div>
+                        </div>
+                        <!-- 状态指示器 - 需要关注 -->
+                        <div class="absolute -top-1 -right-1 w-7 h-7 bg-yellow-500 rounded-full border-3 border-white shadow-md flex items-center justify-center">
+                            <i class="fas fa-exclamation text-white text-xs"></i>
+                        </div>
+                    </div>
+                    
+                    <!-- 植物信息 -->
+                    <div class="flex-1 min-w-0">
+                        <h3 class="text-lg font-bold text-gray-900 mb-1">黑金刚</h3>
+                        <p class="text-xs text-gray-500 mb-3 italic">Ficus elastica</p>
+                        
+                        <!-- 智能提醒 -->
+                        <div class="space-y-2 mb-3">
+                            <!-- 浇水提醒 - 即将到期 -->
+                            <div class="bg-yellow-50 rounded-xl p-2.5 border-2 border-yellow-300">
+                                <div class="flex items-center justify-between mb-1">
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-tint text-yellow-600 text-sm"></i>
+                                        <span class="text-xs font-semibold text-gray-700">下次浇水</span>
+                                    </div>
+                                    <span class="text-xs font-bold text-yellow-700 bg-yellow-200 px-2 py-0.5 rounded-full">明天</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <div class="flex-1 bg-yellow-100 rounded-full h-1.5 overflow-hidden">
+                                        <div class="bg-gradient-to-r from-yellow-400 to-orange-500 h-full rounded-full" style="width: 95%"></div>
+                                    </div>
+                                    <span class="text-xs text-gray-500">周期: 10天</span>
+                                </div>
+                            </div>
+                            
+                            <!-- 施肥提醒 -->
+                            <div class="bg-orange-50 rounded-xl p-2.5 border border-orange-100">
+                                <div class="flex items-center justify-between mb-1">
+                                    <div class="flex items-center gap-2">
+                                        <i class="fas fa-seedling text-orange-600 text-sm"></i>
+                                        <span class="text-xs font-semibold text-gray-700">下次施肥</span>
+                                    </div>
+                                    <span class="text-xs font-bold text-orange-600">7天后</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <div class="flex-1 bg-orange-100 rounded-full h-1.5 overflow-hidden">
+                                        <div class="bg-gradient-to-r from-orange-400 to-orange-600 h-full rounded-full" style="width: 30%"></div>
+                                    </div>
+                                    <span class="text-xs text-gray-500">周期: 30天</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 操作按钮 -->
+                        <div class="flex gap-2">
+                            <button class="flex-1 bg-green-50 text-green-600 py-2 rounded-xl text-sm font-medium hover:bg-green-100 transition">
+                                <i class="fas fa-eye mr-1"></i>查看
+                            </button>
+                            <button class="px-4 bg-red-50 text-red-600 py-2 rounded-xl text-sm font-medium hover:bg-red-100 transition">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 空状态提示（隐藏，有数据时不显示） -->
+        <div class="hidden text-center py-20">
+            <div class="text-8xl mb-5">🌱</div>
+            <p class="text-lg font-semibold text-gray-900 mb-2">还没有添加植物</p>
+            <p class="text-sm text-gray-500">在识别页面添加植物到我的花园</p>
+        </div>
+    </div>
+
+    <!-- 底部导航栏 - 4个入口，识别在中间 -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-lg">
+        <div class="flex justify-around py-2">
+            <button class="flex flex-col items-center py-2 px-3">
+                <div class="w-10 h-10 rounded-xl bg-green-100 flex items-center justify-center mb-1">
+                    <i class="fas fa-seedling text-green-600"></i>
+                </div>
+                <span class="text-xs font-medium text-green-600">我的花园</span>
+            </button>
+            <button class="flex flex-col items-center py-2 px-3">
+                <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center mb-1 shadow-lg">
+                    <i class="fas fa-camera text-white text-lg"></i>
+                </div>
+                <span class="text-xs font-semibold text-green-600">识别</span>
+            </button>
+            <button class="flex flex-col items-center py-2 px-3">
+                <div class="w-10 h-10 rounded-xl bg-gray-100 flex items-center justify-center mb-1">
+                    <i class="fas fa-search text-gray-400"></i>
+                </div>
+                <span class="text-xs text-gray-400">百科</span>
+            </button>
+            <button class="flex flex-col items-center py-2 px-3">
+                <div class="w-10 h-10 rounded-xl bg-gray-100 flex items-center justify-center mb-1">
+                    <i class="fas fa-user text-gray-400"></i>
+                </div>
+                <span class="text-xs text-gray-400">我的</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Taroify Image 组件脚本 -->
+    <script src="taroify-image.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人中心 - 植遇</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="taroify-theme.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#E8F5E9',
+                            100: '#C8E6C9',
+                            500: '#4CAF50',
+                            600: '#43A047',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- 导航栏 -->
+    <div class="bg-green-500 text-white px-4 py-3 shadow-md">
+        <div class="flex items-center gap-2">
+            <i class="fas fa-leaf text-xl"></i>
+            <span class="font-semibold text-lg">个人中心</span>
+        </div>
+    </div>
+
+    <div class="px-5 py-6 pb-20">
+        <!-- 用户信息卡片 -->
+        <div class="bg-gradient-to-br from-green-500 to-green-600 rounded-3xl p-6 shadow-xl mb-6 text-white">
+            <div class="flex items-center gap-4 mb-4">
+                <div class="w-20 h-20 rounded-full bg-white bg-opacity-20 backdrop-blur-sm flex items-center justify-center border-3 border-white border-opacity-30 overflow-hidden">
+                    <!-- Taroify Image：圆形头像 -->
+                    <div data-taroify-image 
+                         data-src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=200&h=200&fit=crop"
+                         data-mode="aspectFill"
+                         data-shape="round"
+                         data-placeholder="加载中..."
+                         data-fallback="加载失败"
+                         style="width: 100%; height: 100%;">
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <h2 class="text-xl font-bold mb-1">植友</h2>
+                    <p class="text-white text-opacity-80 text-sm">ID: zhiyu_2024</p>
+                </div>
+                <button class="text-white">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            <div class="flex gap-6 pt-4 border-t border-white border-opacity-20">
+                <div class="text-center">
+                    <p class="text-2xl font-bold">12</p>
+                    <p class="text-xs text-white text-opacity-80">我的植物</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-2xl font-bold">8</p>
+                    <p class="text-xs text-white text-opacity-80">识别记录</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-2xl font-bold">5</p>
+                    <p class="text-xs text-white text-opacity-80">贡献纠正</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 功能菜单 -->
+        <div class="space-y-3 mb-6">
+            <!-- 我的花园 -->
+            <div class="bg-white rounded-2xl p-4 shadow-md cursor-pointer hover:shadow-lg transition">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center">
+                        <i class="fas fa-seedling text-green-600 text-xl"></i>
+                    </div>
+                    <div class="flex-1">
+                        <p class="font-semibold text-gray-900">我的花园</p>
+                        <p class="text-xs text-gray-500">管理您的植物</p>
+                    </div>
+                    <i class="fas fa-chevron-right text-gray-400"></i>
+                </div>
+            </div>
+
+            <!-- 识别历史 -->
+            <div class="bg-white rounded-2xl p-4 shadow-md cursor-pointer hover:shadow-lg transition">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-blue-100 flex items-center justify-center">
+                        <i class="fas fa-history text-blue-600 text-xl"></i>
+                    </div>
+                    <div class="flex-1">
+                        <p class="font-semibold text-gray-900">识别历史</p>
+                        <p class="text-xs text-gray-500">查看所有识别记录</p>
+                    </div>
+                    <i class="fas fa-chevron-right text-gray-400"></i>
+                </div>
+            </div>
+
+            <!-- 我的纠正 -->
+            <div class="bg-white rounded-2xl p-4 shadow-md cursor-pointer hover:shadow-lg transition">
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-xl bg-purple-100 flex items-center justify-center">
+                        <i class="fas fa-edit text-purple-600 text-xl"></i>
+                    </div>
+                    <div class="flex-1">
+                        <p class="font-semibold text-gray-900">我的纠正</p>
+                        <p class="text-xs text-gray-500">查看纠正记录</p>
+                    </div>
+                    <i class="fas fa-chevron-right text-gray-400"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- 设置菜单 -->
+        <div class="space-y-3 mb-6">
+            <div class="bg-white rounded-2xl shadow-md overflow-hidden">
+                <div class="p-4 flex items-center gap-4 cursor-pointer hover:bg-gray-50 transition">
+                    <div class="w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center">
+                        <i class="fas fa-bell text-gray-600 text-xl"></i>
+                    </div>
+                    <div class="flex-1">
+                        <p class="font-semibold text-gray-900">消息通知</p>
+                    </div>
+                    <i class="fas fa-chevron-right text-gray-400"></i>
+                </div>
+                <div class="h-px bg-gray-100"></div>
+                <div class="p-4 flex items-center gap-4 cursor-pointer hover:bg-gray-50 transition">
+                    <div class="w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center">
+                        <i class="fas fa-cog text-gray-600 text-xl"></i>
+                    </div>
+                    <div class="flex-1">
+                        <p class="font-semibold text-gray-900">设置</p>
+                    </div>
+                    <i class="fas fa-chevron-right text-gray-400"></i>
+                </div>
+                <div class="h-px bg-gray-100"></div>
+                <div class="p-4 flex items-center gap-4 cursor-pointer hover:bg-gray-50 transition">
+                    <div class="w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center">
+                        <i class="fas fa-question-circle text-gray-600 text-xl"></i>
+                    </div>
+                    <div class="flex-1">
+                        <p class="font-semibold text-gray-900">帮助与反馈</p>
+                    </div>
+                    <i class="fas fa-chevron-right text-gray-400"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- 关于 -->
+        <div class="bg-white rounded-2xl p-4 shadow-md cursor-pointer hover:shadow-lg transition mb-6">
+            <div class="flex items-center gap-4">
+                <div class="w-12 h-12 rounded-xl bg-green-100 flex items-center justify-center">
+                    <i class="fas fa-info-circle text-green-600 text-xl"></i>
+                </div>
+                <div class="flex-1">
+                    <p class="font-semibold text-gray-900">关于植遇</p>
+                    <p class="text-xs text-gray-500">版本 1.0.0</p>
+                </div>
+                <i class="fas fa-chevron-right text-gray-400"></i>
+            </div>
+        </div>
+
+        <!-- 退出登录 -->
+        <button class="w-full bg-white text-red-600 py-4 rounded-2xl font-semibold shadow-md hover:shadow-lg transition">
+            <i class="fas fa-sign-out-alt mr-2"></i>
+            退出登录
+        </button>
+    </div>
+
+    <!-- 底部导航栏 - 4个入口，识别在中间 -->
+    <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 shadow-lg">
+        <div class="flex justify-around py-2">
+            <button class="flex flex-col items-center py-2 px-4">
+                <div class="w-10 h-10 rounded-xl bg-gray-100 flex items-center justify-center mb-1">
+                    <i class="fas fa-seedling text-gray-400"></i>
+                </div>
+                <span class="text-xs text-gray-400">我的花园</span>
+            </button>
+            <button class="flex flex-col items-center py-2 px-4">
+                <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center mb-1 shadow-lg">
+                    <i class="fas fa-camera text-white text-lg"></i>
+                </div>
+                <span class="text-xs font-semibold text-green-600">识别</span>
+            </button>
+            <button class="flex flex-col items-center py-2 px-4">
+                <div class="w-10 h-10 rounded-xl bg-gray-100 flex items-center justify-center mb-1">
+                    <i class="fas fa-search text-gray-400"></i>
+                </div>
+                <span class="text-xs text-gray-400">百科</span>
+            </button>
+            <button class="flex flex-col items-center py-2 px-3">
+                <div class="w-10 h-10 rounded-xl bg-green-100 flex items-center justify-center mb-1">
+                    <i class="fas fa-user text-green-600"></i>
+                </div>
+                <span class="text-xs font-medium text-green-600">我的</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Taroify Image 组件脚本 -->
+    <script src="taroify-image.js"></script>
+</body>
+</html>
+
